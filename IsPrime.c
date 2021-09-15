@@ -6,7 +6,7 @@ int main()
 	int a;
 	printf("Input number : ");
 	scanf("%d", &a);
-	if (isPrime(a) == 0)
+	if (isPrime(a) == 1)
     {
         printf("Prime Number");
     }  
@@ -20,9 +20,9 @@ int main()
 int isPrime(int x)
 {
     int i;
-    for(i=2; i<=x/2; i++)
+    for(i=1; i<=x/2; i++)
     {
-        if(x % i != 0)
+        if(x % i == 1)
         {
             continue;
         }
